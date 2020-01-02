@@ -1,0 +1,20 @@
+.anim{
+  
+  /* Clip Background Image */
+  
+  background: url(animatedx.png) repeat;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Animate Background Image */
+  
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s ease infinite;
+  
+  /* Activate hardware acceleration for smoother animations */
+  
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  
+}
