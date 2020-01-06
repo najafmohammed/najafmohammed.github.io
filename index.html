@@ -112,10 +112,48 @@ img {
   }
 }
 </style>
+<style>
+#preloader {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1000;
+  height: 100%;
+  width: 100%; 
+  background-color:black;
+  display:block;
+}
+#preloader .pre{
+  position:absolute;
+  left:30%;
+  top:30%;
+}
 
+  </style>
 </head>
-<body>
-<div class="stars"></div>
+<body onload="myFunction()">
+
+<div id="preloader" style="display:block";><div class="pre"><?xml version="1.0" encoding="utf-8"?>
+<svg id="Main" viewBox="0 0 1496 1248" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 1400 980;" width="312px" height="312px"><defs><style id="ee-google-fonts">@import url(https://fonts.googleapis.com/css?family=Rubik:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style><radialGradient id="gradient-0" gradientUnits="objectBoundingBox" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" style="stop-color: #ffffff"/>
+                <stop offset="1" style="stop-color: #cccccc"/>
+              </radialGradient><radialGradient id="gradient-1" gradientUnits="objectBoundingBox" cx="0.47176462411880493" cy="0.4231003522872925" r="0.5">
+                <stop offset="0" style="stop-color: #ffffff"/>
+                <stop offset="1" style="stop-color: #cccccc"/>
+              </radialGradient></defs><rect id="ee-background" x="0" y="0" width="512" height="1248.4857177734375" style="fill: rgb(1, 1, 1); fill-opacity: 0; pointer-events: none;"/>
+
+<g id="cl1" transform="matrix(1, 0, 0, 1, 410.8591613769531, -13.0413818359375)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.255858838558197, -0.7192220687866211, 0.08355481177568436, 0.029724014922976494, 389.2553768941068, 339.7218068200618)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 491.2057568312548, -82.53737763371132)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 175.5527369909396, 414.56482551343464)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 254.00311657791008, 316.6106614561476)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 570.1671837891217, -179.65950279920546)"/></g>
+  <g  id="cl2" transform="matrix(1, 0, 0, 1, 119.55805206298828, -130.34115600585938)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 729.3368638953098, 602.5274137635143)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 530.7186358380113, 656.2080175907614)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 846.8825809789084, 159.9379448881439)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.7366363406181335, 0.13331590592861176, -0.01627080701291561, 0.08990348130464554, 799.1069455013712, 486.6249462161204)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1043.7669833267773, 105.7967926531552)"/></g>
+  <g id="cl3" transform="matrix(1, 0, 0, 1, 133.129150390625, -475.6985168457031)"><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1122.6961837216638, 599.3094571725942)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 924.3827652392199, 651.6248876396548)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.748717188835144, 0.13761217892169952, -0.015211638994514942, 0.08276146650314331, 874.5993782669209, 979.9796288606467)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 807.5661741430486, 1095.5962077319055)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 608.21888113348, 1147.8950366362187)"/></g>
+  <path id="mainTraingle" class="st0" d="M160.2,1162H49.8l55.2-96.6L160.2,1162z M60.2,1156h89.7l-44.8-78.5L60.2,1156z" style="fill: rgb(5, 237, 255);" transform="matrix(4.438405990600586, 0, 0, 4.438405990600586, 267.0892028808594, -4489.396179199219)"/>
+  <g id="cl21" transform="matrix(-1, 0, 0, 1, 1053.50830078125, -11.036041259765625)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.255858838558197, -0.7192220687866211, 0.08355481177568436, 0.029724014922976494, 389.2553768941068, 339.7218068200618)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 491.2057568312548, -82.53737763371132)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 175.5527369909396, 414.56482551343464)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 254.00311657791008, 316.6106614561476)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 570.1671837891217, -179.65950279920546)"/></g>
+  <g id="cl22" transform="matrix(-1, 0, 0, 1, 1349.567138671875, -131.55384826660156)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 729.3368638953098, 602.5274137635143)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 530.7186358380113, 656.2080175907614)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 846.8825809789084, 159.9379448881439)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.7366363406181335, 0.13331590592861176, -0.01627080701291561, 0.08990348130464554, 799.1069455013712, 486.6249462161204)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1043.7669833267773, 105.7967926531552)"/></g>
+  <g id="cl23" transform="matrix(-1, 0, 0, 1, 1351.099853515625, -483.7239074707031)"><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1122.6961837216638, 599.3094571725942)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 924.3827652392199, 651.6248876396548)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.748717188835144, 0.13761217892169952, -0.015211638994514942, 0.08276146650314331, 874.5993782669209, 979.9796288606467)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 807.5661741430486, 1095.5962077319055)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 608.21888113348, 1147.8950366362187)"/></g>
+  <g id="cl31" transform="matrix(-0.48029419779777527, 0.8771158456802368, -0.8771158456802368, -0.48029419779777527, 1338.0760498046875, 489.01995849609375)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.255858838558197, -0.7192220687866211, 0.08355481177568436, 0.029724014922976494, 389.2553768941068, 339.7218068200618)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 491.2057568312548, -82.53737763371132)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 175.5527369909396, 414.56482551343464)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 254.00311657791008, 316.6106614561476)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 570.1671837891217, -179.65950279920546)"/></g>
+  <g id="cl32" transform="matrix(-0.4746965169906616, 0.8801658153533936, -0.8801658153533936, -0.4746965169906616, 1579.2650146484375, 292.98095703125)"><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 729.3368638953098, 602.5274137635143)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 530.7186358380113, 656.2080175907614)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 846.8825809789084, 159.9379448881439)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.7366363406181335, 0.13331590592861176, -0.01627080701291561, 0.08990348130464554, 799.1069455013712, 486.6249462161204)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1043.7669833267773, 105.7967926531552)"/></g>
+  <g id="cl33" transform="matrix(-0.48737233877182007, 0.8732118010520935, -0.8732118010520935, -0.48737233877182007, 1899.4906005859375, 479.295654296875)"><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 1122.6961837216638, 599.3094571725942)"/><path class="st0" d="M654,884c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S683.2,884,654,884z M654,784&#10;&#9;&#9;&#9;&#9;c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S679.9,784,654,784z" style="fill: rgb(5, 237, 255);" transform="matrix(0.2909591495990753, 0, 0, 0.2909591495990753, 924.3827652392199, 651.6248876396548)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 238, 255);" transform="matrix(0.748717188835144, 0.13761217892169952, -0.015211638994514942, 0.08276146650314331, 874.5993782669209, 979.9796288606467)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 807.5661741430486, 1095.5962077319055)"/><path class="st0" d="M58,49h100v100H58V49z" style="fill: rgb(5, 237, 255); stroke: rgb(5, 237, 254);" transform="matrix(3.0872690677642822, -1.6110516786575317, 0.038919463753700256, 0.07458031177520752, 608.21888113348, 1147.8950366362187)"/></g></svg></div>
+            </div></div>
+  <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="twinkling2"></div>
 <div class="image-container">
@@ -126,8 +164,6 @@ img {
 </div>
 
 
-
-</div>
 <!--1st row set-->
 <div class="row">
   <div class="column">
@@ -199,36 +235,6 @@ img {
               c-0.353,0.441-0.706,0.883-1.059,1.324C313.556,175.581,311.349,176.552,308.966,176.552"/>
           </g>
           <polygon id=yellowbox style="fill:#ECBA16;" points="79.448,176.552 203.034,176.552 203.034,52.966 79.448,52.966 	"/>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
         </g>
         </svg>
       <h3>COMPUTER SCIENCE</h3>
@@ -334,16 +340,26 @@ img {
   </div>
   
     </div>
-  </div>
-</div>
+ 
 <script src="js/jquery.min.js"></script>
 <script src="js/TimelineMaxmin.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("preloader").style.display = "none";
+    }
+</script>
+<script>
 
 var tl = new TimelineMax({repeat:3});
 
-tl.from('#test', 0.5, {scaleY: 0, transformOrigin: "center", ease: Bounce.easeOut})
+tl.from('#screen', 1.5, {scaleY: 0, transformOrigin: "center", ease: "easeOut"})
 
 
 tl.from('#codeline1', .3, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
@@ -359,16 +375,150 @@ tl.from('#codeline1dot', .3, {scaleX: 0, transformOrigin: "left", ease: "expo.ou
 
 tl.from('#yellowbox', .3, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
 
-tl.from('#codeline41', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
-.from('#codeline42', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
-.from('#codeline51', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
-.from('#codeline52', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+tl.from('#codeline41', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+.from('#codeline42', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+.from('#codeline51', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+.from('#codeline52', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
 
 
-tl.from('#codeline43', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
-.from('#codeline44', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
-.from('#codeline53', 1, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+tl.from('#codeline43', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+.from('#codeline44', .5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
+.from('#codeline53', 1.5, {scaleX: 0, transformOrigin: "left", ease: "expo.out"})
     
 </script>
+<script>
+  var tl = new TimelineMax();
+var tl1 = new TimelineMax({delay:0.7});
+var tl2 = new TimelineMax({delay:0.9});
+var tl3 = new TimelineMax({delay:0.8});
+
+
+tl.from("#mainTraingle", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  stagger: 0.1,
+  transformOrigin: "center",
+  ease: "expo.out"
+});
+tl1.from("#cl1", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl1.from("#cl21", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl1.from("#cl31", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.from("#cl2", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.from("#cl22", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.from("#cl32", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.from("#cl3", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.from("#cl23", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.from("#cl33", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+
+//reverse
+
+tl.to("#mainTraingle", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  delay:1.4,
+  transformOrigin: "center",
+  ease: "expo.out"
+});
+tl1.to("#cl1", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl1.to("#cl21", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl1.to("#cl31", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.to("#cl2", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.to("#cl22", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl2.to("#cl32", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.to("#cl3", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.to("#cl23", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+tl3.to("#cl33", 0.5, {
+  scaleY: 0,
+  scaleX: 0,
+  transformOrigin: "bottom left",
+  ease: "circ.inOut"
+});
+
+  </script>
 </body>
 </html>
