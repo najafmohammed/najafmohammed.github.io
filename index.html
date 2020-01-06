@@ -341,7 +341,7 @@ img {
 <script src="js/TweenMax.min.js"></script>
 <script>
 
-var tl = new TimelineMax();
+var tl = new TimelineMax({repeat:3});
 
 tl.from('#test', 0.5, {scaleY: 0, transformOrigin: "center", ease: Bounce.easeOut})
 
