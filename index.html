@@ -95,6 +95,7 @@ img {
   width: 100%; 
   background-color:black;
   display:block;
+  overflow-x: hidden;
 }
 #preloader .pre{
   position:absolute;
@@ -442,11 +443,15 @@ img {
     var myVar;
     
     function myFunction() {
+      document.getElementsByTagName('html')[0].style.overflow = "hidden";
       myVar = setTimeout(showPage, 3500);
+      
     }
     
     function showPage() {
       document.getElementById("preloader").style.display = "none";
+      document.getElementsByTagName('html')[0].style.overflow = "visible";
+
     }
 </script>
 <script>
