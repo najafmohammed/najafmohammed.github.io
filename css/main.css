@@ -70,12 +70,12 @@
 
 .stars {
   background:transparent url(stars2.png) repeat bottom;
-  z-index:2;
+  z-index:-2;
 }
 
 .twinkling{
   background:transparent url(stars2.png) repeat bottom    ;
-  z-index:2;
+  z-index:-2;
 
   -moz-animation:move-twink-back 200s ease infinite;
   -ms-animation:move-twink-back 200s ease infinite;
@@ -85,7 +85,7 @@
 }
 .twinkling2{
   background:transparent url(stars2.png) repeat ;
-  z-index:3;
+  z-index:-2;
 
   -moz-animation:move-twink-front 200s ease infinite;
   -ms-animation:move-twink-front 200s ease infinite;
@@ -100,24 +100,11 @@
   height: 100%; 
   background-size: cover;
   position: relative;
-  z-index:1;
+  z-index:-3;
   
 }
 .a{ font-family: anuratiregular;}
-.b{
-  background-color: rgba(0, 0, 0, 0.055);
-  color: rgba(255, 255, 255, 0.959);
-  font-size: 50%; 
-  font-weight: bold;
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: screen;
-  z-index:3;
-}
+
 
 .text {
   background-color: rgba(0, 0, 0, 0.055);

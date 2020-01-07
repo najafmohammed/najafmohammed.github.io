@@ -4,36 +4,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/iconfont.css">
 <style>
-
-span {
-
-font: 700 4em/1 "Oswald", sans-serif;
-letter-spacing: 0;
-padding: .25em 0 .325em;
-display: block;
-margin: 0 auto;
-text-shadow: 0 0 80px rgba(255,255,255,.5);
-
-/* Clip Background Image */
-
-background: url(animatedx.png) repeat-y;
--webkit-background-clip: text;
-background-clip: text;
-
-/* Animate Background Image */
-
--webkit-text-fill-color: transparent;
--webkit-animation: aitf 80s ease infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
--webkit-transform: translate3d(0,0,0);
--webkit-backface-visibility: hidden;
-
-}
-
-
 /* Animate Background Image */
 
 @-webkit-keyframes aitf {
@@ -87,7 +60,9 @@ background-clip: text;
 body,html {
   margin: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
+
 
 @font-face {
     font-family: 'anuratiregular';
@@ -141,7 +116,20 @@ img {
   </style>
 </head>
 <body onload="myFunction()">
-
+  <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5;width:40%" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-xlarge" onclick="w3_close()">Close &times;</button>
+    <a href="#events" class="w3-bar-item w3-button w3-xlarge">EVENTS</a>
+    <a href="#timeline" class="w3-bar-item w3-button w3-xlarge">TIMELINE</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-xlarge">GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-xlarge">CONTACT</a>
+  </div>
+  
+  <!-- Page Content -->
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+  
+  
+    <button id="buttonf" class="w3-button w3-text-aqua w3-xxlarge" onclick="w3_open()" style="z-index:10;position: fixed">&#9776;</button>
+    
 <div id="preloader" style="display:block";><div class="pre"><?xml version="1.0" encoding="utf-8"?>
 <svg id="Main" viewBox="0 0 1496 1248" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 1400 980;" width="150px" height="150px"><defs><style id="ee-google-fonts">@import url(https://fonts.googleapis.com/css?family=Rubik:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style><radialGradient id="gradient-0" gradientUnits="objectBoundingBox" cx="0.5" cy="0.5" r="0.5">
                 <stop offset="0" style="stop-color: #ffffff"/>
@@ -168,12 +156,13 @@ img {
 <div class="image-container">
 <div class="text a anim">AAROH</div>
 <div class="c a anim">2020</div>
-<div class="b a">
-    <span>COMMING SOON</span></div>
+
 </div>
-
-
+<br>
 <!--1st row set-->
+<div id="events" class="w3-container w3-center w3-blue">
+  <h1>EVENTS</h1>
+</div>
 <div class="row">
   <div class="column">
     <div class="card">
@@ -347,12 +336,62 @@ img {
       
     </div>
   </div>
-  
+  </div>
+
+  <!--3st row end-->
+  <div id="timeline" class="w3-container w3-center w3-blue">
+    <h1>TIME LINE</h1>
+  </div>
+  <br>
+  <h3> dummy content
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </h3>
+  <br>
+  <div id="gallery" class="w3-container w3-center w3-blue">
+    <h1>GALLERY</h1>
+  </div>
+  <br>
+  <h3> dummy content
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </h3>
+  <br>
+  <div id="contact" class="w3-container w3-center w3-blue">
+    <h1>CONTACT</h1>
+  </div>
+  <br>
+  <h3> dummy content
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </h3>
+  <br>
+  <footer class="footer py-5">
+    <div class="w3-container w3-xxlarge w3-dark-gray">
+         <div class="row">
+
+              <div class="col-lg-12 col-12">                                
+                  <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                  
+              </div>
+              
+         </div>
     </div>
+</footer>
  
 <script src="js/jquery.min.js"></script>
 <script src="js/TimelineMaxmin.js"></script>
 <script src="js/TweenMax.min.js"></script>
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("buttonf").style.display = "none";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("buttonf").style.display = "block";
+  }
+  </script>
 <script>
     var myVar;
     
