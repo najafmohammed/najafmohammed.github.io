@@ -25,7 +25,7 @@ body,html {
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 50%;
     display: block;
     margin-bottom: 20px;
   }
@@ -40,7 +40,7 @@ body,html {
   background-color: #f1f1f1;
 }
 .card:hover {
-  box-shadow: 4px 4px 4px 4px rgba(30, 100, 112, 0.459);
+  box-shadow: 4px 4px 4px 4px rgba(7, 27, 117, 0.459);
 }
 
 /* HOME ANIMATIONS*/
