@@ -25,7 +25,7 @@ body,html {
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 50%;
     display: block;
     margin-bottom: 20px;
   }
@@ -110,6 +110,12 @@ body,html {
   z-index:-3;
   
 }
+.custom
+{
+  background-image: url('cp_background.jpg');
+  background-size: cover;
+  position: relative;
+}
 .a{ font-family: anuratiregular;}
 
 
@@ -137,6 +143,20 @@ body,html {
   text-align: center;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  z-index:3;
+}
+.logo_containers
+{
+  background-color: rgba(0, 0, 0, 0.055);
+  font-size: 600%; 
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;

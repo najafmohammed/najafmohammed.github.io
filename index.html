@@ -102,6 +102,7 @@ img {
  
 }
 
+
   </style>
 </head>
 <body onload="myFunction()">
@@ -144,17 +145,17 @@ img {
   <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="twinkling2"></div>
-<div class="image-container">
-<div class="text a anim">AAROH</div>
-<div class="c a anim">2020</div>
 
-</div>
+    <div id="particles-js" class="custom">    
+        <div class="text a anim">AAROH</div>
+        <div class="c a anim">2020</div>
+    </div>
 <!--1st row set-->
 <div id="events" class="w3-container w3-center w3-blue">
   <h1>EVENTS</h1>
 </div>
-<br>
 
+<div class="w3-container" style = "height: 100%; overflow: auto">
 <div class="row">
   <div class="column">
     <div id="card1" class="card">
@@ -251,7 +252,6 @@ img {
               </div>
             </div>
       </div>
-</div>
 
 <!--2st row set-->
 <div class="row">
@@ -322,8 +322,9 @@ img {
     </div>
   </div>
   </div>
-  
-<br>
+  </div>
+  </div>
+
   <!--3st row end-->
   <div id="timeline" class="w3-container w3-center w3-blue">
     <h1>TIME LINE</h1>
@@ -421,6 +422,112 @@ img {
 <script src="js/jquery.min.js"></script>
 <script src="js/TimelineMaxmin.js"></script>
 <script src="js/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+    const particlesJSON = {
+  "particles": {
+      "number": {
+          "value": 20,
+          "density": {
+              "enable": true,
+              "value_area": 350
+          }
+      },
+      "color": {
+          "value": "#9be7ff"
+      },
+      "shape": {
+          "type": "polygon",
+          "stroke": {
+              "width": 2,
+              "color": "cyan"
+          },
+          "polygon": {
+              "nb_sides": 6
+          },
+          "image": {
+              "src": "img/github.svg",
+              "width": 300,
+              "height": 300
+          }
+      },
+      "opacity": {
+          "value": 0.5,
+          "random": true
+      },
+      "size": {
+          "value": 10,
+          "random": true
+      },
+      "line_linked": {
+          "enable": false,
+          "distance": 200,
+          "color": "#ff5722",
+          "opacity": 0.3,
+          "width": 2
+      },
+      "move": {
+          "enable": true,
+          "speed": 5,
+          "direction": "bottom",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": true,
+          "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+          }
+      }
+  },
+  "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+          "onhover": {
+              "enable": true,
+              "mode": [
+                  "grab",
+                  "bubble"
+              ]
+          },
+          "onclick": {
+              "enable": true,
+              "mode": "repulse"
+          },
+          "resize": true
+      },
+      "modes": {
+          "grab": {
+              "distance": 400,
+              "line_linked": {
+                  "opacity": 0.7
+              }
+          },
+          "bubble": {
+              "distance": 600,
+              "size": 12,
+              "duration": 1,
+              "opacity": 0.8,
+              "speed": 1
+          },
+          "repulse": {
+              "distance": 400,
+              "duration": 0.4
+          },
+          "push": {
+              "particles_nb": 20
+          },
+          "remove": {
+              "particles_nb": 10
+          }
+      }
+  },
+  "retina_detect": true
+}
+
+particlesJS("particles-js", particlesJSON)
+    </script>
 <script>
  
   function expandButton(id){
